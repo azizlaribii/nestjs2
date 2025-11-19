@@ -1,0 +1,37 @@
+Comment le moteur génère-t-il la force nécessaire pour faire fonctionner le générateur d'électricité ?
+
+Le MoteurModule représente le moteur thermique ou électrique du véhicule.
+Son rôle : produire une énergie mécanique (rotation).
+
+Comment l’alternateur, alimenté par le moteur, génère-t-il l’électricité ?
+
+L’alternateur convertit l’énergie mécanique provenant du moteur en énergie électrique.
+
+Comment le phare dépend-il du générateur pour fournir de l’éclairage ?
+
+Le PhareModule nécessite de l’électricité pour fonctionner.
+Il dépend donc du GenerateurModule (ou de la batterie chargée par l’alternateur).
+
+Comment le système audio utilise-t-il l'électricité générée par l’alternateur ?
+
+Le système audio fonctionne également grâce à l’électricité fournie par l’alternateur.
+
+Comment le module principal orchestre-t-il les autres modules ?
+
+Le VehiculeModule coordonne l'ensemble des composants :
+Fonctionnement :
+
+Il démarre le moteur.
+
+Récupère l’énergie mécanique.
+
+La transmet au générateur pour produire l’électricité.
+
+Distribue cette électricité aux modules dépendants :
+
+PhareModule
+
+AudioModule
+
+Batterie ...
+

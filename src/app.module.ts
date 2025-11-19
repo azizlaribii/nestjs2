@@ -1,0 +1,15 @@
+import { Module } from '@nestjs/common';
+import { AppController } from './app.controller';
+import { AppService } from './app.service';
+import { MoteurModule } from './moteur/moteur.module';
+import { GenerateurModule } from './generateur/generateur.module';
+import { PhareModule } from './phare/phare.module';
+import { AudioModule } from './audio/audio.module';
+import { VehiculeModule } from './vehicule/vehicule.module';
+
+@Module({
+  imports: [MoteurModule, GenerateurModule, PhareModule, AudioModule, VehiculeModule],
+  controllers: [AppController],
+  providers: [AppService],
+})
+export class AppModule {}
